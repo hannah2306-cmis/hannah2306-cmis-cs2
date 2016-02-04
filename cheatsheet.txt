@@ -1,0 +1,5 @@
+cloning: git clone --config="http.proxy=http://hannah2306:hannah2306@192.168.2.1:8080" https://github.com/hannah2306-cmis/hannah2306-cmis-cs2.git 
+cd <directory name>: entering a file and changing directory 
+ls <directory name>: List contents of a directory 
+cat <file name>: View the contents of a file 
+gedit <file name> & 
