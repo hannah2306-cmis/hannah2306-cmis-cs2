@@ -33,6 +33,17 @@ def avg_volume (a,b):
 	return (y+z)/2 
 print avg_volume (10, 20) 
  
-print avg_volume (10,20)
+def area(a,b,c):  
+	s=(a+b+c)/2 
+	return (s*(s-a)*(s-b)*(s-c))**0.5
+print area(1,2,2.5) 
+
+def right_align(a):
+	return(80-len(a))*(" ") + a
+print right_align("Hello")
+
+def center(a):
+	return (40-len(a))*(" ") + a
+print center ("Hello") 
 
 
