@@ -66,11 +66,27 @@ center2 = ("What are you doing")
 box1 = msg_box("What's up")
 box2 = msg_box("I love dogs")
 
-print msg_box(str(add1)
-print msg_box(str(add2)
-print msg_box(str(sub1)
-print msg_box(str(sub2)
-print msg_box(str(mul1)
-print msg_box(str(mul2)
-print msg_box(str(div1)
-print msg_box(str(div2), str(time1), str(time2), str(circlearea1), str(circlearea2), str(volumesphere1), str(volumesphere2), str(average1), str(average2), str(area1), str(area2), str(right1), str(right2), str(center1), str(center2), str(box1), str(box2)
+print msg_box(str(add1))
+print msg_box(str(add2))
+print msg_box(str(sub1))
+print msg_box(str(sub2))
+print msg_box(str(mul1))
+print msg_box(str(mul2))
+print msg_box(str(div1))
+print msg_box(str(div2))
+print msg_box(str(time1)) 
+print msg_box(str(time2))
+print msg_box(str(circlearea1))
+print msg_box(str(circlearea2))
+print msg_box(str(volumesphere1))
+print msg_box(str(volumesphere2))
+print msg_box(str(average1))
+print msg_box(str(average2))
+print msg_box(str(area1))
+print msg_box(str(area2))
+print right1
+print right2
+print center1
+print center2
+print box1
+print box2
