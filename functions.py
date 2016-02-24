@@ -39,7 +39,7 @@ def center(a): #word with additional spaces so that it is exactly centered on th
 	return (40-len(a))*(" ") + a 
 
 def msg_box(a): #string as an argument then returning a message box 
-	return "+" + ((len(a)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (a)+ (2*" ") + "|" + "\n" + "+" + ((len(a)+4)*"-") + "+" 
+	return "+" + ((len(a)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (a)+ (2*" ") + "|" + "\n" + "+" + ((len(a)+4)*"-") + "+" #len stands for length for the number of letters in a string 
 
 add1 = add(5,6) 
 add2 = add(9,6)
@@ -84,9 +84,9 @@ print msg_box(str(average1))
 print msg_box(str(average2))
 print msg_box(str(area1))
 print msg_box(str(area2))
-print right1
-print right2
-print center1
-print center2
-print box1
-print box2
+print msg_box(right1)
+print msg_box(right2)
+print msg_box(center1)
+print msg_box(center2)
+print msg_box(box1)
+print msg_box(box2) 
