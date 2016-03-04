@@ -1,18 +1,27 @@
 #Part 1: Terminology (15 points)
 
+#+1 for explaining what the symble "=" is used for 
+
 #1 1pt) What is the symbol "=" used for?
 #This symbol is called an assignment operator. 
 #You use it to assign values from the right side to the left side. For #examle z = x + y assigns value of x + y into the variable z. 
 #In other words, it is used to put a value inside a variable. 
 
+#+3 for defining what function means
+ 
 #2 3pts) Write a technical definition for 'function'
 #A function is a named sequence of statements that does a computation, or math.  
 #When you are defining a function,you state the sequence of statements and #the name. You can also "call" a function.   
 #For example: type(54) --> This means the name of the function is type and #the argument of the function is in the parentheses. The output that you #will get from this functions is the type of argument. 
+
+#+1 for explaining what return does
+
 #3 1pt) What does the keyword "return" do?
 #When you return something, you are spitting out a value. 
 #So, when a functions takes an argument and "returns" an answer. This answer #and result is known as the return value. 
-#
+
+#+4.5 because there is just one example for tuple
+ 
 #4 5pts) We know 5 basic data types. Write the name for each one and provide #two
 #   examples of each below
 #	1: Boolean--
@@ -26,18 +35,23 @@
 #ex. ("Hannah", "Staton", 15, "student") 
 #	5:floating point
 #ex. = 1.0, 5.0 
-#
+
+#+2 for explaining the difference between a "function definition" and a "function call" 
+
 #5 2pts) What is the difference between a "function definition" and a 
 #        "function call"?
 #Function call is the code that is used to pass control to a function. (b = mul(5,6) 
 #Function definition is a block of code that does an operation and returns a result. It has parameters which is the input and return the result. (add(5,6)) 
-#
-#
+
+#+3 for explaining what is happening in these 3 phases 
+ 
 #6 3pts) What are the 3 phases that every computer program has? What happens in
 #        each of them
 #	1:Input -- you are putting in a value into the program 
 #	2:Process -- it performs a computation 
-#	3:Output --the result of the computation 
+#	3:Output --the result of the computation
+ 
+#14.5/15
 
 #Part 2: Programming (25 points)
 #Write a program that asks the user for the areas of 3 circles.
@@ -52,6 +66,16 @@
 #TOTALS  ...
 
 # Hint: Radius is the square root of the area divided by pi
+
+#+1 for header line
+#+1 for return value
+#+1 for function name 
+
+#+1 for header line
+#+1 for return value
+#+1 because the result wasn't correct but you used format
+#+1 for just using format but the result was incorrect
+
 def sum3circlearea(a, b, c): 
 	return (a + b + c) 
 def output (a, b, c, d): 
@@ -67,6 +91,12 @@ Totals      {}
 """.format(a, b, c) 
 	return out
 
+#+1 for header line
+#+1 for getting input
+#+1 for converting input into an interger
+#+1 for calling output function
+#+1 for calling main 
+
 def main():
 	a = raw_input("Area of c1: ")
 	b = raw_input("Area of c2: ") 
@@ -76,3 +106,6 @@ def main():
 	print out
 
 main()
+
+12/25 
+26.5/40 
