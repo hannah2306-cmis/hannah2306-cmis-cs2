@@ -1,10 +1,10 @@
 import random 
 import math
-from random import randint
+
 
 def main():
-    minimumNumber = raw_input("What is the minimum number?: ") 
-    maximumNumber = raw_input("What is the maximum number?: ")
+    minimumNumber = int(raw_input("What is the minimum number?: ")) 
+    maximumNumber = int(raw_input("What is the maximum number?: "))
     targetNumber = random.randint(minimumNumber, maximumNumber) 
     output = """ 
 I'm think of a number from {} to {}.
