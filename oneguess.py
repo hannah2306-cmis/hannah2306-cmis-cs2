@@ -10,7 +10,7 @@ def main():
 I'm think of a number from {} to {}.
 """.format(minimumNumber, maximumNumber)
     print output
-    guessing = raw_input("What do you think it is?: ")   
+    guessing = int(raw_input("What do you think it is?: "))   
     if targetNumber == guessing: 
         print """
 The target was {}.
