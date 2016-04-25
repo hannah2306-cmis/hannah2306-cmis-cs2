@@ -3,16 +3,16 @@
 #a) 2 == 2 
 #b) 5 >= 2 
 #c) 8 <= 10 
-#
+# 0 
 #2) What does 'return' do?
 # It returns a value. In other words, it brings it back. 
 # Spits out a value. 
-#
+#+1
 #
 #3) What are 2 ways indentation is important in python code?
 #a) If the line is indented then it means it is the end of the function. 
 #b) If the line is not indented we know it hasn't finished yet. 
-#
+#+1
 #
 
 #PART 2: Reading
@@ -22,22 +22,25 @@
 #problem1_b): The square root of 3
 #problem1_c): The square root of 0 
 #problem1_d): -5 
-#
+#+4
 #problem2_a): True 
 #problem2_b): False 
 #problem2_c): False 
 #problem2_d): False 
-#
+#+4
 #problem3_a): c 
 #problem3_b): b 
 #problem3_c): a 
 #problem3_d): b 
-#
+#+4
 #problem4_a): 7
 #problem4_b): 5 
 #problem4_c): 1.5
 #problem4_d): 4.5
-#
+#0
+#0
+#1
+#0
 
 #PART 3: Programming
 #Write a script that asks the user to type in 3 different numbers.
@@ -46,6 +49,16 @@
 #If they don't, it should print a message telling them they didn't follow 
 #the directions.
 #Be sure to use the program structure you've learned (main function, processing function, output function)
++1
++1
++1
+0
+0
++1
+0
+0
++1
++1
 
 import random 
 import math 
