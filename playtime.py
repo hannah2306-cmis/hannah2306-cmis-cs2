@@ -29,11 +29,11 @@ def countdown_from(start, stop):
 def adder(sum):
 	print "Running total: {}".format(sum)
 	inputnumber = raw_input("Next number: ")
-	if inputnumber == " ":
+	if inputnumber == "":
 		print "The sum is {}.".format(sum)
 		exit()
 	else:
-		sum = sum * float(inputnumber)
+		sum = sum + float(inputnumber)
 		adder(sum)
  
 def main(): 
