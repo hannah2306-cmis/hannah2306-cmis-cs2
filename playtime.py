@@ -31,18 +31,39 @@ def adder(sum):
 	inputnumber = raw_input("Next number: ")
 	if inputnumber == "":
 		print "The sum is {}.".format(sum)
-		exit()
+		return sum
 	else:
 		sum = sum + float(inputnumber)
 		adder(sum)
- 
+
+def largestnumber(lastnumber):
+	number = raw_input("Next number: ")
+	if number == "":
+		return lastnumber
+	elif lastnumber < float(number):
+		lastnumber = float(number)
+		return largestnumber(lastnumber)
+	else:
+		return largestnumber(lastnumber)
+def smallestnumber(lastnumber):
+	number = raw_input("Next number: ")
+	if number == "":
+		return lastnumber
+	elif lastnumber > float(number):
+		lastnumber = float(number)
+		return smallestnumber(lastnumber)
+	else:
+		return smallestnumber(lastnumber)
+
 def main(): 
 	countdown(10) 
 	countup(2)
 	countup_from(2,12)
 	countdown_from(32,12)
 	sum = 0
-	adder(sum) 
-	return
-
+	adder(sum)
+	out = largestnumber(-float('Inf'))
+	print "The largest number is " + str(out)
+	out = smallestnumber(float('Inf'))
+	print "The smallest number is " + str(out)
 main() 
