@@ -45,6 +45,7 @@ def largestnumber(lastnumber):
 		return largestnumber(lastnumber)
 	else:
 		return largestnumber(lastnumber)
+
 def smallestnumber(lastnumber):
 	number = raw_input("Next number: ")
 	if number == "":
@@ -54,6 +55,15 @@ def smallestnumber(lastnumber):
 		return smallestnumber(lastnumber)
 	else:
 		return smallestnumber(lastnumber)
+
+def power(x, n):
+	if n == 1:
+		return x
+	else:
+		return x * power(x, n - 1)
+def poweroutput():
+	result = power(2, 8)
+	print result
 
 def main(): 
 	countdown(10) 
@@ -66,4 +76,5 @@ def main():
 	print "The largest number is " + str(out)
 	out = smallestnumber(float('Inf'))
 	print "The smallest number is " + str(out)
+	poweroutput()
 main() 
