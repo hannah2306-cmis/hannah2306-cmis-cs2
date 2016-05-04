@@ -64,7 +64,12 @@ def power(x, n):
 def poweroutput():
 	result = power(2, 8)
 	print result
-
+#def pow(x, n): 
+#	if n == 0:
+#		return 1 
+#
+#
+#
 def main(): 
 	countdown(10) 
 	countup(2)
