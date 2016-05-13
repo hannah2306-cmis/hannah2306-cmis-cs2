@@ -10,29 +10,50 @@ print "Hint: The dragon you are about to fight against can beat left handed peop
 
 def main(): 
 	ready = raw_input("Are you ready?: no or yes ")
-	area = raw_input("Where are you?: ") 
-	energy = int(raw_input("How many items of food did you eat this morning?: ")) 
+	area = raw_input("Where are you?: ")  
 	output = """
-Don't be scared! You better get your act together and get some confidence to beat this dragon! You need to win!
+Don't be scared! You better get your act together and get some confidence to beat this dragon!...
+
 You are in the {}! You can't be anywhere else than the forest! 
+
 Oh my goodness! You have eaten {} items this morning!...
-Remember that you need to have a lot of energy before you fight this dragon!You need to try your best to win! 
+Remember that you need to have a lot of energy before you fight this dragon! 
+
 If you haven't eaten enough, then go get some food before you fight this dragon! You need to try your best to win! 
-""".format(area, energy)
+""".format(area)
  	print output
+
+	energy = int(raw_input("How many items of food did you eat this morning?: "))
+	enough(energy)
+	hair = raw_input("What condition is your hair in?: behind your ears, out of your face: ") 
+	your(hair)
+	
 
 	weapon = raw_input("What weapon would you like?: torch, stick, whip, bowling ball, sword: ")
 	yourdecision(weapon) 
+
 	move = raw_input("What is the move that the dragon has chosen to use?: breathing fire, breaths out bad breath, steps on your toes, whips tail, or grabs you: ")
 	dragonattacks(move)
+
+	clothes, waterbottle = raw_input("Do you have thin clothes on and more than one waterbottle?: yes or no: ")
+	howmuch(clothes, waterbottle) 
+
 	hair = raw_input("Is your hair behind your ears?: yes or no: ") 
 	your(hair)
-	water = raw_input("You brought your water bottle right?: yes or no: ")      
-	hydratedwith(water)
+
 	lowerbody = raw_input("What position is your lower body in right now?: wide legs or feet together: ") 
 	strengthof(lowerbody)
 	upperbody = raw_input("HURRY! THIS IS YOUR LAST SHOT! This is the most important question that you have to answer. If you choose the correct answer you are going to win. But if you choose the wrong answer...I'm sorry, go yell at your Momma! Here it is...What is your dominant hand?: left handed or right handed: ")
 	strengthof(upperbody)
+#or, >, ==, and, 
+def enough(energy):
+	if energy > int("0"):
+		print "Yay! You have had enough food! Way to go! NEXT..."
+
+def your(hair):
+	if hair == "behind your ears" or hair == "out of your face"  :
+		print "Yay! You have your hair out of your face or behind your ears. Either way you are on the right track. NEXT..."
+
 
 def yourdecision(weapon): 
 	
@@ -53,49 +74,48 @@ def yourdecision(weapon):
 		strength = 10 
 	else:
 		strength = random.randint(0,10) 
-	return strength * random.random() 
+	return strength * random.random()
+#random = random float from 0-1 
 
 def dragonattacks(move):
 
 	if move == "breathing fire":
-		print "You are going to lose to this dragon! You still have a chance if you answer the next four questions correctly!"
+		print "You are going to lose to this dragon! You still have a chance if you answer the next five questions correctly!"
 		enemystrength = 10
 	elif move == "breaths out bad breath": 
 		print "You have a chance to beat this dragon! GO GO GO!"
 		enemystrength = 3 
 	elif move == "steps on your toes":
-		print "You could lose... You still have a chance if you answer the next four questions correctly!"
+		print "You could lose... You still have a chance if you answer the next five questions correctly!"
 		enemystrength = 7
 	elif move == "whips tail":
-		print "The dragon is probably going to beat you.. You still have a chance if you answer the next four questions correctly! But don't get your hopes up high because you have a fierce competitor! :("
+		print "The dragon is probably going to beat you.. You still have a chance if you answer the next five questions correctly! But don't get your hopes up high because you have a fierce competitor! :("
 		enemystrength = 8
 	elif move == "grabs you": 
-		print "Oh no! The dragon has caught you! You are probably going to die most likely! Hurry do something! You still have a chance if you answer the next four questions correctly!"
+		print "Oh no! The dragon has caught you! You are probably going to die most likely! Hurry do something! You still have a chance if you answer the next five questions correctly!"
 		enemystrength = 9 
 	else:
 		enemystrength = random.randint(0,10) 
 	return enemystrength * random.random()
 
-def your(hair):
-	if hair == "behind your ears":
-		print "Yay! You have your hair out of your face! You can see the dragon!"
+#logical operaters/2 Alternative Executrion
 
-def hydratedwith(water):
-	if water == "yes":
-		print "Yay! You are not dehydrated! I'm happy you didn't forget your water bottle! Way to go!"
-
+def howmuch(clothes, waterbottle):
+	if clothes == "thin" and waterbottle > "one":
+		print "PERFECT! You have thin clothes and more than one water bottle! YAYY! We are moving on to the next question..."  
+	else:
+		print "NOOO!!! Your clothes can't be any thicker and you should have more than one water bottle! Don't worry you have a few more questions to answer! GO GO GO!"
+ 
 def strengthof(lowerbody):
 	if lowerbody == "wide legs": 
 		print "You are strong enough to fight this dragon."
 	else:
-		lowerbody == "feet together":
 		print "You are too weak to fight this dragon. HURRY YOU MUST TELL ME WHAT YOUR UPPER BODY IS LIKE BEFORE I TELL YOU IF YOU WON OR LOST TO THIS DRAGON!" 
 
 def strengthof(upperbody):
 	if upperbody == "left handed":
 		print "You LOST!!! The dragon beat you! I am disapointed in you! You didn't read or you forgot the hint that I have you at the start of this game!" 
-	else:
-	 	upperbody == "right handed":
+	elif upperbody == "right handed":
 		print "CONGRATULATIONS!!! YOU HAVE BEATEN THE DRAGON! Thank your Momma for coming out as a right handed person!"
 
 main()
