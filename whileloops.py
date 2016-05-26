@@ -28,4 +28,27 @@ def count(x):
 count(10)
 count(-10)
 
+def countfrom(start, stop):
+	while start < stop:
+		print start 
+		start += 1 
+	while start > stop: 
+		print stop
+		stop -= 1 
+countfrom(-10, 10) 
+
+def sumOfOdds(n):
+	total = 0 
+	while n < 0:
+		if n % 2 == 0:
+			n += 1 
+		else:
+			total += n 
+			 
+	while n > 0: 
+		print stop
+		stop -= 1 
+countfrom(-10, 10) 
+
+
 
