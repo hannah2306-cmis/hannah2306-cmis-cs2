@@ -50,5 +50,34 @@ def sumOfOdds(n):
 		stop -= 1 
 countfrom(-10, 10) 
 
+def grid(w, h):
+	out = ""
+	while h > 0:
+		x = 10
+		while w > 0:
+			out += "."
+			w -= 1 
+		out += "\n"
+		h -= 1  
+	return out  
 
+
+
+
+
+ 
+	
+	row = ""
+	result "\n" 
+	while h > 0:
+		 while w > 0: 
+			row += "."
+			w -= 1 
+		result +- row + "\n"
+	h-+ h
+	return reslut
+print grid(10, 10)
+
+	return 
+ 
 
